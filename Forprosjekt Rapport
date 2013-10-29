@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="fpstyle.css" >
+
+<title>Forprosjekt Rapport</title>
+
+</head>
+<body>
+
+<header>
+	<h1>Forprosjekt Rapport</h1>
+</header>
+
+<section>
+	<h2>Use Case</h2>
+	<ul>
+		<li>Kunne lese historier</li>
+		<li>Bli medlem ved å legge til sin E-mail</li>
+		<li>Medlems innlogging</li>
+		<li>Glemt passord</li>
+		<li>Medlemmer kan kommentere</li>
+		<li>Søke felt</li>
+		<li>Link til Google-translate</li>
+		<li>Kunne forandre skrift og bakgrunns farge etter smak.</li>
+	</ul>
+
+	<h2>Webside skisser</h2>
+		<img width="750" height="350" alt="skisse av index.php siden" src="websideskisse.png">
+
+
+	<h2>Arbeidsfordeling</h2>
+		<p>Thomas Newman: Dokumantasjon,</p>
+		<p>Hallbjørn Storruste: </p>
+		<p>Adrian Westlund:</p>
+		<p>Stian Eidet:</p>
+		<p>Denne arbeids fordeling er ikke endelig.</p>
+
+	<h2>Teknologier</h2>
+		<ul>
+			<li>php: For å lage en enkelt side som vi kan legge undersider til.</li>
+			<li>HTML: For å lage undersidene.</li>
+			<li>CSS: Kontrollere utseende</li>
+			<li>Javascript: For å lage søksfunksjoner</li>
+			<li>JQuery: Forenklede Javascript metoder</li>
+			<li>Google-translate: </li>
+		</ul>
+
+
+	<h2>Milepæl Plan</h2>
+		<ul>
+			<li>1. uke: Forprosjekt Rapport</li>
+			<li>2. uke: Sette opp php, html og css rammeverk</li>
+			<li>3. uke: Programmere websidens funksjoner</li>
+			<li>4. uke: Bli ferdig med å legge til kapitler og codex info</li>
+			<li>5. uke: Dokumentasjon</li>
+		</ul>
+
+</section>
+
+
+
+<footer>
+	<p>Dette er en "Work-in-progress" så forandringer kan forventes.</p>
+</footer>
+
+
+
+</body>
+
+</html>
