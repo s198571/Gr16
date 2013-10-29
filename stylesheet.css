@@ -1,0 +1,79 @@
+body{
+	background-color:#DDD;
+	font-family:Ariel;
+}
+article{
+	background-color:#FFF;
+	padding:2%;
+	
+	margin-left:15px;
+	margin-right:15px;
+	margin-top:5px;
+	margin-bottom:5px;
+	
+	max-width:900px;
+	min-width:900px;
+}
+header{
+	background-image:url('bilde/venator.jpg');
+	background-color:#DDD;
+	text-align:center;
+	border-style:solid;
+	border-color:#000;
+}
+#navL{	
+	text-align:center;
+	background-color:#EEE;
+	border-style:solid;
+	border-color:#000;
+	width:100px;
+	float:left;
+	height:700px;
+	width:120px;
+}
+#navR{	
+	text-align:center;
+	background-color:#EEE;
+	border-style:solid;
+	border-color:#000;
+	width:100px;float: left;
+	float:right;
+	height:700px;
+	width:120px;
+}
+ul{
+	list-style-type:none;
+}
+li{
+	display:block;
+	margin-top:10px;
+}
+a{
+	color:#000;
+	background-color:#EEE;
+	text-align:center;
+	text-decoration:none;
+	border-style:solid;
+	border-color:#000;
+	width:90px;
+	margin-left:-40px;
+}
+a:hover,a:active{
+	color:#FFF;
+	background-color:#000;
+	border-color:#000;
+}
+section{
+	border-style:solid;
+	border-color:#000;
+	float:left;
+	height: 700px;
+	width: 632px;
+	padding-left:10px;
+}
+footer{
+	background-color:#DDD;
+	border-style:solid;
+	border-color:#000;
+	clear:both;
+}
