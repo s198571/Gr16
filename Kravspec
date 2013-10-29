@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="fpstyle.css" >
+
+<title>Kravspec</title>
+
+</head>
+
+<body>
+
+<header>
+	<h1>Kravspec</h1>
+</header>
+
+<section>
+	<ul>
+		<li>Skal kunne fremvise historien til en skribent</li>
+		<li>Skal kunne leses av alle</li>
+		<li>Enkelt å oppdatere</li>
+		<li>Enkelt for alle å navigere</li>
+		<li>Responsiv design</li>
+		<li>Skal kunne støtte alle nettlesere</li>
+		<li>Skal valideres for HTML5 og CSS3 eller 2.1</li>
+		<li>Skal levers til følgende dead-line: </li>
+		<li>ForProsjekt Rapport: 30.10.2013</li>
+		<li>Prosjekt Rapport og webside: 24.11.2013</li>
+	</ul>
+</section>
+
+<footer>
+	<h3>Deltakere:</h3>
+	<p>Thomas Newman</p>
+	<p>Stian Eidet</p>
+	<p>Hallbjørn Storruste</p>
+	<p>Adrian Westlund</p>
+</footer>
+
+
+
+</body>
+
+</html>
