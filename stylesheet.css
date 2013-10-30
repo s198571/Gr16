@@ -13,6 +13,8 @@ article{
 	
 	max-width:900px;
 	min-width:900px;
+	margin-right:auto;
+    	margin-left:auto;
 }
 header{
 	background-image:url('bilde/venator.jpg');
