@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Star Wars</title>
 		<link rel="stylesheet" title="Orginal" href="stylesheet.css">
+		<link rel="shortcut icon" href="ship.ico" type="image/x-icon">
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	</head>
 	<body>
