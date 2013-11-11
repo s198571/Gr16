@@ -1,5 +1,5 @@
 body{
-	background-color:#DDD;
+	background-color:#333;
 	font-family:Ariel;
 	margin-top:0%;
 	margin-bottom:0%;
@@ -18,18 +18,21 @@ header{
 	background-color:rgba(0,0,0,0.0);
 	text-align:center;
 	border-style:solid;
-	border:none;
-	/*margin:-0.25%;*/
+	border-color:#ffd700;
+	margin:-0.25%;
 }
 #mainCon{
 	border-style:solid;
-	border-color:gold;
+	border-color:#ffd700;
 	border-width:0.5%;
 	padding:0%;
 }
 nav{	
 	text-align:center;
 	background-color:rgba(0,0,0,0.0);
+	border:none;
+	padding:0%;
+	margin:0%;
 	
 	width:10%;
 	float:left;
@@ -41,14 +44,18 @@ nav{
 }
 ul{
 	list-style-type:none;
+	border:none;
 	margin:0%;
 	padding:0%;
 }
 li{
+	border:none;
+	padding:0%;
+	margin:0%;
 	margin-top:10px;
 }
 .navA{
-	color:gold;
+	color:#ffd700;
 	background-color:rgba(0,0,0,0.0);
 	text-align:center;
 	display:block;
@@ -57,11 +64,11 @@ li{
 	
 	
 	border-style:solid;
-	border-color:gold;
+	border-color:#ffd700;
 }
 .navA:hover,.navA:active{
 	color:#000;
-	background-color:gold;
+	background-color:#ffd700;
 }
 section{
 	color:gold;
@@ -72,6 +79,7 @@ section{
 	padding:1%;
 	max-width:77.5%;
 	position:relative;
+	margin-top:0.25%;
 }
 #secNav{
 	background-color:rgba(0,0,0,0.0);
@@ -109,8 +117,11 @@ a{
 	background:url('pictures/arrowRH.svg') no-repeat 70% 70% / cover;
 }
 footer{
-	background-color:#DDD;
-	border:none;
+	color:#ffd700;
+	background-color:rgba(0,0,0,0.0);
+	border-style:solid;
+	border-color:#ffd700;
+	margin:-0.25%;
 	padding:1%;
 	clear:both;
 }
