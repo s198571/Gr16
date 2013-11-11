@@ -116,6 +116,7 @@ footer{
 }
 #easter{
 	width:350px;
+	position:absolute;
 }
 
 @media all and (max-width:800px){
