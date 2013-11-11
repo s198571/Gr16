@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link>
 		<meta charset="UTF-8">
 		<title>Star Wars</title>
+		<link rel="shortcut icon" href="pictures/Under_construction_icon-blue.svg" type="image/x-icon">
 		<link rel="stylesheet" title="Orginal" href="stylesheet.css">
-		<link rel="shortcut icon" href="ship.ico" type="image/x-icon">
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="script.js"></script>
+		<script src="easter.js"></script>
+
 	</head>
 	<body>
 		<article>
+		<div id="mainCon">
 			<header>
-				<h1>Logo</h1>
+				<h1>The Dark Times</h1>
 			</header>
-			<nav id="navL">
-				<ul>
-					<li><a href="index.php?page=1">Chapter 1</a></li>
-					<li><a href="#2">2</a></li>
-					<li><a href="#3">3</a></li>
-					<li><a href="#4">4</a></li>
-					<li><a href="#5">5</a></li>
-				</ul>
-			</nav>
-			<nav id="navR">
-				<ul>
-					<li><a href="#1">1</a></li>
-					<li><a href="#2">2</a></li>
-					<li><a href="#3">3</a></li>
-					<li><a href="#4">4</a></li>
-					<li><a href="#5">5</a></li>
-				</ul>
-			</nav>
-			<?php
-				if(empty($_GET))
-					include 'frontPage.html';
-				switch($_GET["page"])
-				{
-				    case 1: include 'c1p1.html';
-					    	break;
-				    case 2: include 'c1p2.html';
-					        break;
-				    case 3: include 'c1p3.html';
-							break;
-					case 4: include 'c1p4.html';
-					        break;
-				}
-			?>
-			<footer>
-				<p>Deltagare:</p>
-			</footer>
+
+				<nav>
+					<ul>
+						<li><a class="navA" href="index.php?page=1">Home</a></li>
+						<li><a class="navA" href="index.php?page=2">Chapter 1</a></li>
+						<li><a class="navA" href="#3">3</a></li>
+						<li><a class="navA" href="#4">4</a></li>
+						<li><a class="navA" href="#5">5</a></li>
+					</ul>
+				</nav>
+				<?php
+					if(empty($_GET))
+						include 'frontPage.html';
+					else
+					{
+						switch($_GET["page"])
+						{
+						    case 1: include 'frontPage.html';
+							    	break;
+						    case 2: include 'chapter-1/ch1p1.html';
+							        break;
+						    case 3: include 'chapter-1/ch1p2.html';
+									break;
+							case 4: include 'chapter-1/ch1p3.html';
+							        break;
+							default: include 'frontPage.html';
+						}
+					}
+				?>
+				<nav id="navR">
+					<ul>
+						<li><a class="navA" href="#1">1</a></li>
+						<li><a class="navA" href="#1">1</a></li>
+						<li><a class="navA" href="#1">1</a></li>
+						<li><a class="navA" href="#1">1</a></li>
+						<li><a class="navA" href="#1">1</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<p>Deltagare:</p>
+				</footer>
+			</div>
 		</article>
 	</body>
 </html>
