@@ -25,7 +25,7 @@ $(document).keydown(function(e){
 });
 
 function start(){
-	$("section").append("<div id='easter'>"+"<img src='./pictures/falcon.gif' alt='Image of Falcon' width='350px'"+"</div>")//.gif hentet fra: "http://newbiedm.com/2010/08/23/the-importance-of-a-ship-in-your-star-wars-game/"
+	$("section").append("<div id='easter'>"+"<img src='./pictures/falcon.gif' alt='Image of Falcon' width='350px'"+"</div>");//.gif hentet fra: "http://newbiedm.com/2010/08/23/the-importance-of-a-ship-in-your-star-wars-game/"
 	$(easter).offset({left:$("body").width()/2 - 200,top:$("body").height()/2 -100});
 
 	lagVector();

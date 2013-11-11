@@ -42,6 +42,8 @@
 									break;
 							case 4: include 'chapter-1/ch1p3.html';
 							        break;
+							case 5: include 'chapter-1/ch1p4.html';
+									break;
 							default: include 'frontPage.html';
 						}
 					}

@@ -14,7 +14,8 @@ article{
     	margin-left:auto;
 }
 header{
-	color:gold;
+	color:#ffd700;
+	font-size:2em;
 	background-color:rgba(0,0,0,0.0);
 	text-align:center;
 	border-style:solid;
@@ -72,7 +73,7 @@ li{
 }
 section{
 	color:gold;
-	background-color:rgba(255,255,255,0.6);
+	background-color:rgba(255,255,255,0.2);
 	border:none;
 	
 	float:left;
