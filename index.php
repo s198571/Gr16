@@ -3,8 +3,8 @@
 	<head>
 		<link>
 		<meta charset="UTF-8">
-		<title>Star Wars</title>
-		<link rel="shortcut icon" href="pictures/Under_construction_icon-blue.svg" type="image/x-icon">
+		<title>The Dark Times</title>
+		<link rel="shortcut icon" href="pictures/ship.ico" type="image/x-icon">
 		<link rel="stylesheet" title="Orginal" href="stylesheet.css">
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="script.js"></script>
