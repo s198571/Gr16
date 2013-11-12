@@ -20,11 +20,19 @@
 
 				<nav>
 					<ul>
-						<li><a class="navA" href="index.php?page=1">Home</a></li>
-						<li><a class="navA" href="index.php?page=2">Chapter 1</a></li>
-						<li><a class="navA" href="#3">3</a></li>
-						<li><a class="navA" href="#4">4</a></li>
-						<li><a class="navA" href="#5">5</a></li>
+						<li><a class="navA" href="index.php">Home</a></li>
+						<li class="navA" onclick="chButton()">Chapter</li>
+						<li class="chHide"><a class="navA" href="index.php?page=1">Ch.1</a></li>
+						<li class="chHide"><a class="navA" href="#3">Ch.2</a></li>
+						<li class="chHide"><a class="navA" href="#4">Ch.3</a></li>
+						<li class="chHide"><a class="navA" href="#5">Ch.4</a></li>
+						<li class="chHide"><a class="navA" href="#5">Ch.5</a></li>
+						<li class="chHide"><a class="navA" href="#5">Ch.6</a></li>
+						<li class="chHide"><a class="navA" href="#5">Ch.7</a></li>
+						<li class="chHide"><a class="navA" href="#5">Ch.8</a></li>
+						<li class="chHide"><a class="navA" href="#5">Ch.9</a></li>
+						<li class="chHide"><a class="navA" href="#5">Ch.10</a></li>
+						<li class="chHide"><a class="navA" href="#5">Ch.11</a></li>
 					</ul>
 				</nav>
 				<?php
@@ -34,15 +42,13 @@
 					{
 						switch($_GET["page"])
 						{
-						    case 1: include 'frontPage.html';
-							    	break;
-						    case 2: include 'chapter-1/ch1p1.html';
+						    case 1: include 'chapter-1/ch1p1.html';
 							        break;
-						    case 3: include 'chapter-1/ch1p2.html';
+						    case 2: include 'chapter-1/ch1p2.html';
 									break;
-							case 4: include 'chapter-1/ch1p3.html';
+							case 3: include 'chapter-1/ch1p3.html';
 							        break;
-							case 5: include 'chapter-1/ch1p4.html';
+							case 4: include 'chapter-1/ch1p4.html';
 									break;
 							default: include 'frontPage.html';
 						}
@@ -50,11 +56,11 @@
 				?>
 				<nav id="navR">
 					<ul>
-						<li><a class="navA" href="#1">1</a></li>
-						<li><a class="navA" href="#1">1</a></li>
-						<li><a class="navA" href="#1">1</a></li>
-						<li><a class="navA" href="#1">1</a></li>
-						<li><a class="navA" href="#1">1</a></li>
+						<li class="navA" onclick="button()">Ext.links</li>
+						<li class="hide"><a class="navA" href="http://www.google.com" target="_blank">Google</a></li>
+						<li class="hide"><a class="navA" href="http://www.google.com" target="_blank">Adrian</a></li>
+						<li class="hide"><a class="navA" href="http://www.google.com" target="_blank">Bästlund</a></li>
+						<li class="hide"><a class="navA" href="http://www.google.com" target="_blank">Westlund</a></li>
 					</ul>
 				</nav>
 				<footer>
