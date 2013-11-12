@@ -21,7 +21,7 @@
 				<nav>
 					<ul>
 						<li><a class="navA" href="index.php">Home</a></li>
-						<li class="navA" onclick="chButton()">Chapter</li>
+						<li id="button" class="navA" onclick="chButton()">Chapter</li>
 						<li class="chHide"><a class="navA" href="index.php?page=1">Ch.1</a></li>
 						<li class="chHide"><a class="navA" href="#3">Ch.2</a></li>
 						<li class="chHide"><a class="navA" href="#4">Ch.3</a></li>
@@ -56,15 +56,15 @@
 				?>
 				<nav id="navR">
 					<ul>
-						<li class="navA" onclick="button()">Ext.links</li>
-						<li class="hide"><a class="navA" href="http://www.google.com" target="_blank">Google</a></li>
-						<li class="hide"><a class="navA" href="http://www.google.com" target="_blank">Adrian</a></li>
-						<li class="hide"><a class="navA" href="http://www.google.com" target="_blank">Bästlund</a></li>
-						<li class="hide"><a class="navA" href="http://www.google.com" target="_blank">Westlund</a></li>
+						<li id="button" class="navA" onclick="button()">Ext.links</li>
+						<li class="hide"><a class="navA" href="http://www.fanfiction.net/~tscorpio1701" target="_blank">FF.net</a></li>
+						<li class="hide"><a class="navA" href="http://forums.spacebattles.com/forums/creative-writing.18/" target="_blank">SB.com forums</a></li>
+						<li class="hide"><a class="navA" href="http://starwars.wikia.com/wiki/Main_Page" target="_blank">Wookie- epedia info side</a></li>
 					</ul>
 				</nav>
 				<footer>
 					<p>Deltagare:</p>
+					<div><a class="foo"><a href="index.php?page="></a></div>
 				</footer>
 			</div>
 		</article>

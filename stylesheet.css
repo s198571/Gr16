@@ -13,14 +13,23 @@ article{
 	margin-right:auto;
     	margin-left:auto;
 }
+@font-face
+{
+font-family:Starjout;
+src: url(starjout/Starjout.ttf);
+}
 header{
+	font-family:Starjout;
+	font-size:4em;
 	color:#ffd700;
-	font-size:2em;
 	background-color:rgba(0,0,0,0.0);
 	text-align:center;
 	border-style:solid;
 	border-color:#ffd700;
 	margin:-0.25%;
+}
+h1{
+	margin:0;
 }
 #mainCon{
 	border-style:solid;
@@ -63,13 +72,15 @@ li{
 	width:80%;
 	margin:5%;
 	
-	
 	border-style:solid;
 	border-color:#ffd700;
 }
 .navA:hover,.navA:active{
 	color:#000;
 	background-color:#ffd700;
+}
+#button{
+	margin-top:10px;
 }
 .chHide{
 	display:none;
@@ -106,6 +117,8 @@ hr{
 }
 a{
 	text-decoration:none;
+	padding:0%;
+	margin:0%;
 }
 .hideInCss{
 	visibility:hidden;
