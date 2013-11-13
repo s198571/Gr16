@@ -1,12 +1,12 @@
 
-function get_query(){
+/*function get_query(){
 	    var url = location.href;
 	    var nr = url.substring(url.indexOf('?')).split('=');
 	    if(isNaN(nr[1]))
 	    	nr[1] = 0;
 	    //console.log(nr[0]);
 	    return nr[1];
-}
+}*/
 
 jQuery(function(){
 var trigger_keys = [37,39];
@@ -23,24 +23,42 @@ $(document).keydown(function(e){
 });
 
 
-$(document).ready(function(){
-	var tall = get_query();
-	var max = 10;
-	//console.log(tall);
-	var back = tall - 1;
-	var forward = ++tall;
-	//console.log(tall);
+function get_query(){
+	    var url = window.location.search.substring(1);
+	    var nr = url.split('&');
+
+	    return nr;
+}
+
+function make_buttons(){
+	var SubString = get_query();
+	console.log(SubString);
+	var chapter = 1;
+	var page = 1;
+	var max = antall;
+	console.log('max: '+max);
+	for(var i=0; i < SubString.length; i++){
+		var VarPair = SubString[i].split('=');
+		if(VarPair[0] == 'chapter')
+			chapter = VarPair[1];
+		if(VarPair[0] == 'page')
+			page = VarPair[1];
+	}
+	console.log('chapter: '+chapter);
+	console.log('page: '+page);
+	var back = page - 1;
+	var forward = ++page;
 
 	$("section").append("<nav id='secNav'><ul id='ulSec'></ul></nav>");
 	if(back > 0)
 	{
-		$("#ulSec").append("<li><a href='index.php?page="+back+"'><span class='hideInCss'>Previous page</span><div id='arrowL'></div></a></li>");
+		$("#ulSec").append("<li><a href='index.php?chapter="+chapter+"&page="+back+"'><span class='hideInCss'>Previous page</span><div id='arrowL'></div></a></li>");
 	}
-	if(forward > 1 && forward < max)
+	if(forward > 1 && forward <= max)
 	{
-		$("#ulSec").append("<li><a href='index.php?page="+forward+"'><span class='hideInCss'>Next page</span><div id='arrowR'></div></a></li>");
+		$("#ulSec").append("<li><a href='index.php?chapter="+chapter+"&page="+forward+"'><span class='hideInCss'>Next page</span><div id='arrowR'></div></a></li>");
 	}
-});
+}
 
 
 function button()

@@ -22,7 +22,7 @@
 					<ul>
 						<li><a class="navA" href="index.php">Home</a></li>
 						<li id="button" class="navA" onclick="chButton()">Chapter</li>
-						<li class="chHide"><a class="navA" href="index.php?page=1">Ch.1</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=1">Ch.1</a></li>
 						<li class="chHide"><a class="navA" href="#3">Ch.2</a></li>
 						<li class="chHide"><a class="navA" href="#4">Ch.3</a></li>
 						<li class="chHide"><a class="navA" href="#5">Ch.4</a></li>
@@ -36,23 +36,41 @@
 					</ul>
 				</nav>
 				<?php
+
+					$kap = glob("c*",GLOB_ONLYDIR);
+
 					if(empty($_GET))
 						include 'frontPage.html';
+
+					else if(empty($_GET["chapter"]))
+						include 'frontPage.html';
+
+					else if($_GET["chapter"] > count($kap))
+						include 'frontPage.html';
+
 					else
 					{
-						switch($_GET["page"])
-						{
-						    case 1: include 'chapter-1/ch1p1.html';
-							        break;
-						    case 2: include 'chapter-1/ch1p2.html';
-									break;
-							case 3: include 'chapter-1/ch1p3.html';
-							        break;
-							case 4: include 'chapter-1/ch1p4.html';
-									break;
-							default: include 'frontPage.html';
-						}
+						$side = glob($kap[$_GET["chapter"]-1]."/*.html");
+						$max = count($side);
+
+						if(empty($_GET["page"]))
+							include $side[0];
+
+						else if($_GET["page"] > $max)
+							include $side[count($side)-1];
+
+						else
+							include $side[$_GET["page"]-1];
+						echo "<script>
+								var antall;
+								$(document).ready(function antallSider() {
+									antall = $max;
+									console.log('antall:'+antall);
+									make_buttons(); });
+							  </script>";
 					}
+
+
 				?>
 				<nav id="navR">
 					<ul>
