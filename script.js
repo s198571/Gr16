@@ -1,13 +1,3 @@
-
-/*function get_query(){
-	    var url = location.href;
-	    var nr = url.substring(url.indexOf('?')).split('=');
-	    if(isNaN(nr[1]))
-	    	nr[1] = 0;
-	    //console.log(nr[0]);
-	    return nr[1];
-}*/
-
 jQuery(function(){
 var trigger_keys = [37,39];
 var left = 0;
@@ -63,13 +53,37 @@ function make_buttons(){
 
 function button()
 			{
-				hide=document.getElementsByClassName("hide");
-
 				$( ".hide" ).toggle(600)
 			}
 function chButton()
 			{
-				hide=document.getElementsByClassName("chHide");
-
 				$( ".chHide" ).toggle(600)
+			}
+function ccButton()
+			{
+				$( ".style" ).toggle(600)
+			}
+function changeColor(x)
+			{
+				art=document.getElementsByTagName("article");
+				sec=document.getElementsByTagName("section");
+				hr=document.getElementsByTagName("hr");
+				navA=document.getElementsByClassName("navA");
+				console.log(navA);
+				console.log(x);
+				for(var i = 0; i < navA.length; i++)
+				{
+					console.log(i);
+					
+					navA[i].style.color = x.style.color;
+					navA[i].style.borderColor = x.style.borderColor;
+				}
+				for(var i = 0; i < hr.length; i++)
+				{
+					hr[i].style.color = x.style.color;
+					hr[i].style.borderColor = x.style.borderColor;
+					hr[i].style.backgroundColor = x.style.color;
+				}
+				art[0].style.cssText = x.style.cssText;
+				sec[0].style.cssText = x.style.cssText;
 			}

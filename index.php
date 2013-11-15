@@ -21,18 +21,18 @@
 				<nav>
 					<ul>
 						<li><a class="navA" href="index.php">Home</a></li>
-						<li id="button" class="navA" onclick="chButton()">Chapter</li>
+						<li class="button" onclick="chButton()">Chapter</li>
 						<li class="chHide"><a class="navA" href="index.php?chapter=1">Ch.1</a></li>
-						<li class="chHide"><a class="navA" href="#3">Ch.2</a></li>
-						<li class="chHide"><a class="navA" href="#4">Ch.3</a></li>
-						<li class="chHide"><a class="navA" href="#5">Ch.4</a></li>
-						<li class="chHide"><a class="navA" href="#5">Ch.5</a></li>
-						<li class="chHide"><a class="navA" href="#5">Ch.6</a></li>
-						<li class="chHide"><a class="navA" href="#5">Ch.7</a></li>
-						<li class="chHide"><a class="navA" href="#5">Ch.8</a></li>
-						<li class="chHide"><a class="navA" href="#5">Ch.9</a></li>
-						<li class="chHide"><a class="navA" href="#5">Ch.10</a></li>
-						<li class="chHide"><a class="navA" href="#5">Ch.11</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=2">Ch.2</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=3">Ch.3</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=4">Ch.4</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=5">Ch.5</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=6">Ch.6</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=7">Ch.7</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=8">Ch.8</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=9">Ch.9</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=10">Ch.10</a></li>
+						<li class="chHide"><a class="navA" href="index.php?chapter=11">Ch.11</a></li>
 					</ul>
 				</nav>
 				<?php
@@ -41,7 +41,19 @@
 
 					if(empty($_GET))
 						include 'frontPage.html';
-
+					
+					else if(!(empty($_GET["appendix"])))
+					{
+						if($_GET["appendix"])
+						{
+							switch($_GET["appendix"]):
+							
+								case 1: include "credits.html";
+									break;
+								default: include "frontPage.html";
+							endswitch;
+						}
+					}					
 					else if(empty($_GET["chapter"]))
 						include 'frontPage.html';
 
@@ -67,22 +79,30 @@
 									antall = $max;
 									console.log('antall:'+antall);
 									make_buttons(); });
-							  </script>";
-					}
-
+							  </script>";	
+					}	
 
 				?>
 				<nav id="navR">
 					<ul>
-						<li id="button" class="navA" onclick="button()">Ext.links</li>
+						<li class="button" class="navA" onclick="button()">Ext.links</li>
 						<li class="hide"><a class="navA" href="http://www.fanfiction.net/~tscorpio1701" target="_blank">FF.net</a></li>
 						<li class="hide"><a class="navA" href="http://forums.spacebattles.com/forums/creative-writing.18/" target="_blank">SB.com forums</a></li>
 						<li class="hide"><a class="navA" href="http://starwars.wikia.com/wiki/Main_Page" target="_blank">Wookie- epedia info side</a></li>
+						<li class="button" class="navA" onclick="ccButton()">Df.style</li>
+						<li style="color:red; border-color:red; background-color:rgba(255,255,255,0.0);" id="style1" class="style" onclick="changeColor(style1)">Style1</li>
+						<li style="color:green; border-color:green; background-color:white;" id="style2" class="style" onclick="changeColor(style2)">Style2</li>
+						<li style="color:white; border-color:white; background-color:black;" id="style3" class="style" onclick="changeColor(style3)">Style3</li>
+						<li style="color:gold; border-color:gold; background-color:rgba(255,255,255,0.2);" id="style4" class="style" onclick="changeColor(style4)">Style4</li>
 					</ul>
 				</nav>
 				<footer>
 					<p>Deltagare:</p>
-					<div><a class="foo"><a href="index.php?page="></a></div>
+					<div class="floatR">
+						<ul>
+							<li><a class="divA" href="index.php?appendix=1">Credits</a></li>
+						</ul>
+					</div>
 				</footer>
 			</div>
 		</article>

@@ -12,20 +12,23 @@ article{
 	min-width:700px;
 	margin-right:auto;
     	margin-left:auto;
+    	
+    	color:#ffd700;
+
+    	border-color:#ffd700;
 }
 @font-face
 {
-font-family:Starjout;
-src: url(starjout/Starjout.ttf);
+font-family:Starjedi;
+src: url(starjedi/Starjhol.ttf);
 }
 header{
-	font-family:Starjout;
-	font-size:4em;
-	color:#ffd700;
-	background-color:rgba(0,0,0,0.0);
+	font-family:Starjedi;
+	font-size:3em;
+
 	text-align:center;
 	border-style:solid;
-	border-color:#ffd700;
+
 	margin:-0.25%;
 }
 h1{
@@ -33,13 +36,10 @@ h1{
 }
 #mainCon{
 	border-style:solid;
-	border-color:#ffd700;
-	border-width:0.5%;
 	padding:0%;
 }
 nav{	
 	text-align:center;
-	background-color:rgba(0,0,0,0.0);
 	border:none;
 	padding:0%;
 	margin:0%;
@@ -79,13 +79,29 @@ li{
 	color:#000;
 	background-color:#ffd700;
 }
-#button{
+.button{
+	cursor: pointer;
+	text-align:center;
+	display:block;
+	width:80%;
+	margin:5%;
 	margin-top:10px;
+	border-style:solid;
 }
 .chHide{
 	display:none;
 }
 .hide{
+	display:none;
+}
+.style{
+	cursor: pointer;
+	text-align:center;
+	display:block;
+	width:80%;
+	margin:5%;
+	margin-top:10px;
+	border-style:solid;
 	display:none;
 }
 section{
@@ -100,8 +116,10 @@ section{
 	margin-top:0.25%;
 }
 hr{
+	border-style:solid;
 	color:#ffd700;
 	background-color:#ffd700;
+	border-color:#ffd700;
 }
 #secNav{
 	background-color:rgba(0,0,0,0.0);
@@ -112,7 +130,7 @@ hr{
 #secNav li{
 	display:inline-block;
 }
-#liFR{
+.floatR{
 	float:right;
 }
 a{
@@ -141,10 +159,8 @@ a{
 	background:url('pictures/arrowRH.svg') no-repeat 70% 70% / cover;
 }
 footer{
-	color:#ffd700;
 	background-color:rgba(0,0,0,0.0);
 	border-style:solid;
-	border-color:#ffd700;
 	margin:-0.25%;
 	padding:1%;
 	clear:both;
@@ -153,7 +169,6 @@ footer{
 	width:350px;
 	position:absolute;
 }
-
 @media all and (max-width:800px){
 	#secNav{
 		
