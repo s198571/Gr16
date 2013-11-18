@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link>
 		<meta charset="UTF-8">
 		<title>The Dark Times</title>
 		<link rel="shortcut icon" href="pictures/ship.ico" type="image/x-icon">
@@ -9,18 +8,19 @@
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="script.js"></script>
 		<script src="easter.js"></script>
-
 	</head>
 	<body>
 		<article>
-		<div id="mainCon">
-			<header>
-				<h1>The Dark Times</h1>
-			</header>
+			<div id="mainCon">
+				<nav id="navHead"></nav>
+				<header>
+					<h1>The Dark Times</h1>
+				</header>
 
 				<nav>
 					<ul>
 						<li><a class="navA" href="index.php">Home</a></li>
+
 						<li class="button" onclick="chButton()">Chapter</li>
 						<li class="chHide"><a class="navA" href="index.php?chapter=1">Ch.1</a></li>
 						<li class="chHide"><a class="navA" href="index.php?chapter=2">Ch.2</a></li>
@@ -33,6 +33,12 @@
 						<li class="chHide"><a class="navA" href="index.php?chapter=9">Ch.9</a></li>
 						<li class="chHide"><a class="navA" href="index.php?chapter=10">Ch.10</a></li>
 						<li class="chHide"><a class="navA" href="index.php?chapter=11">Ch.11</a></li>
+
+						<li class="button" onclick="exButton()">Ext.mat</li>
+						<li class="exHide"><a class="navA" href="index.php?appendix=2">Characters</a></li>
+						<li class="exHide"><a class="navA" href="index.php?appendix=3">INS Challenger</a></li>
+						<li class="exHide"><a class="navA" href="index.php?appendix=4">Acclamator 3</a></li>
+
 					</ul>
 				</nav>
 				<?php
@@ -41,19 +47,25 @@
 
 					if(empty($_GET))
 						include 'frontPage.html';
-					
+
 					else if(!(empty($_GET["appendix"])))
 					{
 						if($_GET["appendix"])
 						{
 							switch($_GET["appendix"]):
-							
+
 								case 1: include "credits.html";
+									break;
+								case 2: include "extras/characters.html";
+									break;
+								case 3: include "extras/ins_challenger.html";
+									break;
+								case 4: include "extras/acclamator3.html";
 									break;
 								default: include "frontPage.html";
 							endswitch;
 						}
-					}					
+					}
 					else if(empty($_GET["chapter"]))
 						include 'frontPage.html';
 
@@ -79,8 +91,8 @@
 									antall = $max;
 									console.log('antall:'+antall);
 									make_buttons(); });
-							  </script>";	
-					}	
+							  </script>";
+					}
 
 				?>
 				<nav id="navR">
@@ -90,18 +102,18 @@
 						<li class="hide"><a class="navA" href="http://forums.spacebattles.com/forums/creative-writing.18/" target="_blank">SB.com forums</a></li>
 						<li class="hide"><a class="navA" href="http://starwars.wikia.com/wiki/Main_Page" target="_blank">Wookie- epedia info side</a></li>
 						<li class="button" class="navA" onclick="ccButton()">Df.style</li>
-						<li style="color:red; border-color:red; background-color:rgba(255,255,255,0.0);" id="style1" class="style" onclick="changeColor(style1)">Style1</li>
+						<li style="color:red; border-color:red; background-color:rgba(255,255,255,0.0);" onmouseover="this.style.backgroundColor='red'; this.style.color='black'; this.style.borderColor='black'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.0)'; this.style.color='red'; this.style.borderColor='red'" id="style1" class="style" onclick="changeColor(style1)">Style1</li>
 						<li style="color:green; border-color:green; background-color:white;" id="style2" class="style" onclick="changeColor(style2)">Style2</li>
 						<li style="color:white; border-color:white; background-color:black;" id="style3" class="style" onclick="changeColor(style3)">Style3</li>
 						<li style="color:gold; border-color:gold; background-color:rgba(255,255,255,0.2);" id="style4" class="style" onclick="changeColor(style4)">Style4</li>
 					</ul>
 				</nav>
 				<footer>
-					<p>Deltagare:</p>
+					<address>
+					Made by:
+					</address>
 					<div class="floatR">
-						<ul>
-							<li><a class="divA" href="index.php?appendix=1">Credits</a></li>
-						</ul>
+						<a class="link" href="index.php?appendix=1">Credits</a>
 					</div>
 				</footer>
 			</div>

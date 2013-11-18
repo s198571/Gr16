@@ -78,6 +78,7 @@ li{
 .navA:hover,.navA:active{
 	color:#000;
 	background-color:#ffd700;
+	border-color:#ffd700;
 }
 .button{
 	cursor: pointer;
@@ -88,10 +89,18 @@ li{
 	margin-top:10px;
 	border-style:solid;
 }
+.button:hover,.button:active{
+	color:#000;
+	background-color:#ffd700;
+	border-color:#ffd700;
+}
 .chHide{
 	display:none;
 }
 .hide{
+	display:none;
+}
+.exHide{
 	display:none;
 }
 .style{
@@ -103,6 +112,10 @@ li{
 	margin-top:10px;
 	border-style:solid;
 	display:none;
+}
+.style:hover,.style:active{
+	color:#000;
+	background-color:gold;
 }
 section{
 	color:gold;
@@ -164,13 +177,25 @@ footer{
 	margin:-0.25%;
 	padding:1%;
 	clear:both;
+	height:1em;
+}
+address{
+	width:70%;
+	margin:0%;
+	padding:0%;
+	float:left;
+}
+.link{
+	color:gold;
+}
+.link:hover, .link:active{
+	text-decoration:underline;
 }
 #easter{
 	width:350px;
 	position:absolute;
 }
-@media all and (max-width:800px){
-	#secNav{
-		
-	}
+.li{
+	list-style-type:disc;
+	margin-left:3em;
 }
