@@ -84,8 +84,6 @@ function changeColor(x)
 
 					navA[i].style.color = x.style.color;
 					navA[i].style.borderColor = x.style.borderColor;
-					/*navA[i].style.cssText += 'onmouseover="this.style.backgroundColor=' + "'" + x.style.backgroundColor + "'" + '"';
-					navA[i].style.cssText += onmouseout.cssText;*/
 				}
 				for(var i = 0; i < hr.length; i++)
 				{

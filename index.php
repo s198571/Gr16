@@ -97,12 +97,12 @@
 				?>
 				<nav id="navR">
 					<ul>
-						<li class="button" class="navA" onclick="button()">Ext.links</li>
+						<li class="button" onclick="button()">Ext.links</li>
 						<li class="hide"><a class="navA" href="http://www.fanfiction.net/~tscorpio1701" target="_blank">FF.net</a></li>
 						<li class="hide"><a class="navA" href="http://forums.spacebattles.com/forums/creative-writing.18/" target="_blank">SB.com forums</a></li>
 						<li class="hide"><a class="navA" href="http://starwars.wikia.com/wiki/Main_Page" target="_blank">Wookie- epedia info side</a></li>
-						<li class="button" class="navA" onclick="ccButton()">Df.style</li>
-						<li style="color:red; border-color:red; background-color:rgba(255,255,255,0.0);" onmouseover="this.style.backgroundColor='red'; this.style.color='black'; this.style.borderColor='black'" onmouseout="this.style.backgroundColor='rgba(255,255,255,0.0)'; this.style.color='red'; this.style.borderColor='red'" id="style1" class="style" onclick="changeColor(style1)">Style1</li>
+						<li class="button" onclick="ccButton()">Df.style</li>
+						<li style="color:red; border-color:red; background-color:rgba(255,255,255,0.0);" id="style1" class="style" onclick="changeColor(style1)">Style1</li>
 						<li style="color:green; border-color:green; background-color:white;" id="style2" class="style" onclick="changeColor(style2)">Style2</li>
 						<li style="color:white; border-color:white; background-color:black;" id="style3" class="style" onclick="changeColor(style3)">Style3</li>
 						<li style="color:gold; border-color:gold; background-color:rgba(255,255,255,0.2);" id="style4" class="style" onclick="changeColor(style4)">Style4</li>
