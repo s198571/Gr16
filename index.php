@@ -12,7 +12,14 @@
 	<body>
 		<article>
 			<div id="mainCon">
-				<nav id="navHead"></nav>
+				<nav id="logg">
+				<ul>
+					<li><a href="prooisg.sfiph">Reg</a></li>
+					<li><a href="pajegh.ølgk">Logg in</a></li>
+					<li><a href="pjsgag.pog">Logg ut</a></li>
+
+				<ul>
+				</nav>
 				<header>
 					<h1>The Dark Times</h1>
 				</header>
