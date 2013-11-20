@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+			<meta charset="UTF-8">
+			<title>The Dark Times</title>
+			<link rel="shortcut icon" href="pictures/ship.ico" type="image/x-icon">
+			<link rel="stylesheet" title="Orginal" href="stylesheet.css">
+
+	</head>
          <body>
              <?php
              include 'init.php';
              ?>
-             
+		<article>
           <h2>Login</h2>
+          <div class="reg">
              <form  action="Login.php" method="post" >
                  <ul id="login">
                  <li>
@@ -25,8 +32,8 @@
                      <a href="loggout.php">Logout</a>
                  </li>
                  </ul>
-             </form>
-        
-        </body>
-   </head>
+         	 </form>
+         	 </div>
+         </article>
+  	</body>
 </html>

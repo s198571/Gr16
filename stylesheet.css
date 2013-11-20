@@ -1,9 +1,37 @@
 body{
 	background-color:#333;
 	font-family:Ariel;
-	margin-top:0%;
-	margin-bottom:0%;
+	margin:0%;
 }
+#logg{
+	max-width:1024px;
+	min-width:700px;
+	margin-right:auto;
+    	margin-left:auto;
+	padding:2%;
+	background-color:gold;
+	border-color:gold;
+	color:black;
+	padding
+}
+#logg ul li{
+	display:inline;
+}
+#logg ul li a{
+	color:black;
+	border-right-style:solid;
+	border-right-color:black;
+	border-left-style:solid;
+	border-left-color:black;
+	padding-bottom:1%;
+	font-size:1.2em;
+	
+}
+#mainCon{
+	clear:both;
+	border-style:solid;
+	padding:0%;
+}	
 article{
 	background:url('pictures/space.jpg');
 	padding:2%;
@@ -12,11 +40,12 @@ article{
 	min-width:700px;
 	margin-right:auto;
     	margin-left:auto;
-    	
+    	margin-top:0%;
+	min-height:770px;
     	color:#ffd700;
-
     	border-color:#ffd700;
 }
+
 @font-face
 {
 font-family:Starjedi;
@@ -28,17 +57,13 @@ header{
 
 	text-align:center;
 	border-style:solid;
-
 	margin:-0.25%;
 }
 h1{
 	margin:0;
 }
-#mainCon{
-	border-style:solid;
-	padding:0%;
-}
-nav{	
+
+.navS{
 	text-align:center;
 	border:none;
 	padding:0%;
@@ -46,11 +71,8 @@ nav{
 	
 	width:10%;
 	float:left;
-}
-#navR{
 	margin-top:0%;
 	padding-top:0%;
-	padding-left:0.1%;
 }
 ul{
 	list-style-type:none;
@@ -104,21 +126,65 @@ li{
 	display:none;
 }
 .style{
-	cursor: pointer;
+	display:none;
+}
+#style1{
+	color:red;
+	background-color:rgba(0,0,0,0.0);
 	text-align:center;
 	display:block;
 	width:80%;
 	margin:5%;
-	margin-top:10px;
 	border-style:solid;
-	display:none;
+	border-color:red;
 }
-.style:hover,.style:active{
-	color:#000;
+#style1:hover, #style1:active{
+	color:black;
+	background-color:red;
+}
+#style2{
+	color:green;
+	background-color:white;
+	text-align:center;
+	display:block;
+	width:80%;
+	margin:5%;
+	border-style:solid;
+	border-color:green;
+}
+#style2:hover, #style2:active{
+	color:white;
+	background-color:green;
+}
+#style3{
+	color:white;
+	background-color:black;
+	text-align:center;
+	display:block;
+	width:80%;
+	margin:5%;
+	border-style:solid;
+	border-color:white;
+}
+#style3:hover,#style3:active{
+	color:black;
+	background-color:white;
+}
+#style4{
+	color:gold;
+	background-color:rgba(255,255,255,0.2);
+	text-align:center;
+	display:block;
+	width:80%;
+	margin:5%;
+	border-style:solid;
+	border-color:gold;
+}
+#style4:hover,#style4:active{
+	color:black;
 	background-color:gold;
 }
 section{
-	color:gold;
 	background-color:rgba(255,255,255,0.2);
 	border:none;
 	
@@ -145,6 +211,9 @@ hr{
 }
 .floatR{
 	float:right;
+}
+.floatL{
+	float:left;
 }
 a{
 	text-decoration:none;
@@ -198,4 +267,9 @@ address{
 .li{
 	list-style-type:disc;
 	margin-left:3em;
+}
+.reg{
+	width:10em;
+	margin-right:auto;
+    	margin-left:auto;
 }

@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>The Dark Times</title>
+		<link rel="shortcut icon" href="pictures/ship.ico" type="image/x-icon">
+		<link rel="stylesheet" title="Orginal" href="stylesheet.css">
+
+	</head>
+	<body>
+
 <?php
 
 include 'init.php';
@@ -33,12 +44,17 @@ if (empty($_POST) === FALSE){
 }
 
 ?>
-<h1>Register</h1>
-
+	<article>
+		<header>
+			<h1>Register</h1>
+		</header>
+		<div class="reg">
 <?php
 
 if (isset($_GET['success']) && empty($_GET['success'])){
     echo'You\`ve been registered!';
+    sleep(2);
+    header('location: index.php');
 }else{
 
 if(empty($_POST) === FALSE && empty($errors) === TRUE){
@@ -47,51 +63,51 @@ if(empty($_POST) === FALSE && empty($errors) === TRUE){
     'password'      => $_POST['password'],
     'first_name'    => $_POST['first_name'],
     'last_name'     => $_POST['last_name'],
-    'email'         => $_POST['email']       
+    'email'         => $_POST['email']
 );
-  
+
 register_user($register_data);
 header('location: register.php?success');
 exit();
-    
+
 }else if (empty($errors) === FALSE) {
     echo output_errors($errors);
 }
-}    
+}
 
 ?>
-
-<form action="" method="post">
-    
-    <ul>
-        <li>
-            Username*:<br>
-            <input type="text" name="username">
-        </li>
-        <li>
-           Password*:<br>
-           <input type="password" name="password">
-        </li>
-        <li>
-           Password again*:<br>
-           <input type="password" name="password_again"> 
-        </li>
-        <li>
-            First name*:<br>
-            <input type="text" name="first_name">
-        </li>
-        <li>
-            Last name:<br>
-            <input type="text" name="last_name">
-        </li>
-        <li>
-            Email*: <br>
-            <input type="text" name="email">
-        </li>
-        <li>
-            <input type="submit" value="Register">
-        </li>
-    </ul>
-      
-    
-</form>
+		<form action="" method="post">
+		    <ul>
+		        <li>
+		            Username*:<br>
+		            <input type="text" name="username">
+		        </li>
+		        <li>
+		           Password*:<br>
+		           <input type="password" name="password">
+		        </li>
+		        <li>
+		           Password again*:<br>
+		           <input type="password" name="password_again">
+		        </li>
+		        <li>
+		            First name*:<br>
+		            <input type="text" name="first_name">
+		        </li>
+		        <li>
+		            Last name:<br>
+		            <input type="text" name="last_name">
+		        </li>
+		        <li>
+		            Email*: <br>
+		            <input type="text" name="email">
+		        </li>
+		        <li>
+		            <input type="submit" value="Register">
+		        </li>
+		    </ul>
+		</form>
+		</div>
+		</article>
+	</body>
+</html>

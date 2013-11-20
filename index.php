@@ -4,27 +4,34 @@
 		<meta charset="UTF-8">
 		<title>The Dark Times</title>
 		<link rel="shortcut icon" href="pictures/ship.ico" type="image/x-icon">
-		<link rel="stylesheet" title="Orginal" href="stylesheet.css">
+		<script>
+			var StyleFile = "stylesheet";
+			if(document.cookie.charAt(6) == ";" || document.cookie.charAt(6) == "S")
+				StyleFile += ".css";
+			else
+				StyleFile += document.cookie.charAt(6) + ".css";
+			document.writeln('<link rel="stylesheet" type="text/css" href="' + StyleFile + '">');
+		</script>
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="script.js"></script>
 		<script src="easter.js"></script>
 	</head>
 	<body>
+		<nav id="logg">
+			<ul class="floatL">
+				<li><a href="register.php">Reg</a></li>
+			</ul>
+			<ul class="floatR">
+				<li><a href="LogIn2.php">Logg in</a></li>
+				<li><a href="loggout.php">Logg ut</a></li>
+			</ul>
+		</nav>
 		<article>
 			<div id="mainCon">
-				<nav id="logg">
-				<ul>
-					<li><a href="prooisg.sfiph">Reg</a></li>
-					<li><a href="pajegh.ølgk">Logg in</a></li>
-					<li><a href="pjsgag.pog">Logg ut</a></li>
-
-				<ul>
-				</nav>
 				<header>
 					<h1>The Dark Times</h1>
 				</header>
-
-				<nav>
+				<nav class="navS">
 					<ul>
 						<li><a class="navA" href="index.php">Home</a></li>
 
@@ -45,7 +52,6 @@
 						<li class="exHide"><a class="navA" href="index.php?appendix=2">Characters</a></li>
 						<li class="exHide"><a class="navA" href="index.php?appendix=3">INS Challenger</a></li>
 						<li class="exHide"><a class="navA" href="index.php?appendix=4">Acclamator 3</a></li>
-
 					</ul>
 				</nav>
 				<?php
@@ -67,7 +73,7 @@
 									break;
 								case 3: include "extras/ins_challenger.html";
 									break;
-								case 4: include "extras/acclamator3.html";
+								case 4: include "extras/acclamator3.php";
 									break;
 								default: include "frontPage.html";
 							endswitch;
@@ -100,19 +106,18 @@
 									make_buttons(); });
 							  </script>";
 					}
-
 				?>
-				<nav id="navR">
+				<nav class="navS">
 					<ul>
 						<li class="button" onclick="button()">Ext.links</li>
 						<li class="hide"><a class="navA" href="http://www.fanfiction.net/~tscorpio1701" target="_blank">FF.net</a></li>
 						<li class="hide"><a class="navA" href="http://forums.spacebattles.com/forums/creative-writing.18/" target="_blank">SB.com forums</a></li>
 						<li class="hide"><a class="navA" href="http://starwars.wikia.com/wiki/Main_Page" target="_blank">Wookie- epedia info side</a></li>
 						<li class="button" onclick="ccButton()">Df.style</li>
-						<li style="color:red; border-color:red; background-color:rgba(255,255,255,0.0);" id="style1" class="style" onclick="changeColor(style1)">Style1</li>
-						<li style="color:green; border-color:green; background-color:white;" id="style2" class="style" onclick="changeColor(style2)">Style2</li>
-						<li style="color:white; border-color:white; background-color:black;" id="style3" class="style" onclick="changeColor(style3)">Style3</li>
-						<li style="color:gold; border-color:gold; background-color:rgba(255,255,255,0.2);" id="style4" class="style" onclick="changeColor(style4)">Style4</li>
+						<li class="style"><a id="style1" href="javascript: document.cookie='style=2 '; window.location.reload();">Style1</a></li>
+						<li class="style"><a id="style2" href="javascript: document.cookie='style=3 '; window.location.reload();">Style2</a></li>
+						<li class="style"><a id="style3" href="javascript: document.cookie='style=4 '; window.location.reload();">Style3</a></li>
+						<li class="style"><a id="style4" href="javascript: document.cookie='style='; window.location.reload();">Style4</a></li>
 					</ul>
 				</nav>
 				<footer>
