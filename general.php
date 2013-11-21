@@ -1,7 +1,7 @@
 <?php
 function protect_page(){
     if (logged_in() === FALSE){
-        header('Location: protect.php');
+        header('Location: index.php?appendix=5');
         exit();
     }
 }
