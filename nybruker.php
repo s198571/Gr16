@@ -21,9 +21,9 @@ require("connect.php");
 		}else{
 			$nybruker = "Brukernavnet finnes fra f??r..";	
 		}
-	}
-}else{
+	
 	die('Du m? v?re innlogget..');	
+
 }
 ?>
 <section id='nyNyhet'>
