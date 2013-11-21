@@ -15,7 +15,7 @@ function logged_in(){
 
 function user_exists($username){
     $username = sanitize($username);
-    return (mysql_result(mysql_query("SELECT COUNT('id') FROM `brukere` WHERE `brukernavn` = '$username'"), 0) == 1) ? TRUE : FALSE;
+    return (mysql_result(mysql_query("SELECT COUNT('id') FROM `brukere` WHERE `username` = '$username'"), 0) == 1) ? TRUE : FALSE;
 }
 
 function email_exists($email){
@@ -25,7 +25,7 @@ function email_exists($email){
 
 function user_id_from_username($username){
     $username = sanitize($username);
-    return mysql_result(mysql_query("SELECT `id` FROM `brukere` WHERE `brukernavn` ='$username'"), 0, 'id');
+    return mysql_result(mysql_query("SELECT `id` FROM `brukere` WHERE `username` ='$username'"), 0, 'id');
 }
 
 function login($username, $password){
@@ -34,6 +34,6 @@ function login($username, $password){
     $username = sanitize($username);
     $password = md5($password);
     
-    return(mysql_result(mysql_query("SELECT COUNT(`id`) FROM `brukere` WHERE `brukernavn` = '$username' AND `passord` = '$password'"), 0) == 1) ? $user_id : FALSE;
+    return(mysql_result(mysql_query("SELECT COUNT(`id`) FROM `brukere` WHERE `username` = '$username' AND `password` = '$password'"), 0) == 1) ? $id : FALSE;
 }
 ?>
