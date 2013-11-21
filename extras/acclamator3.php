@@ -1,3 +1,7 @@
+<?php
+    include 'init.php';
+	protect_page();
+?>
 <section>
 	<h2>Acclamator III heavy frigate;</h2>
 	<h2>INS Dauntless and INS Endurance</h2>
@@ -31,5 +35,4 @@
 		<li>Sentinel-class landing craft: 2</li>
 	</ul>
 	</p>
-
 </section>

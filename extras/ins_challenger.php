@@ -1,3 +1,7 @@
+<?php
+    include 'init.php';
+	protect_page();
+?>
 <section>
 	<h2>Challenger Class Star Destroyer/Carrier</h2>
 

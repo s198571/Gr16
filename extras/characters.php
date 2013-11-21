@@ -1,3 +1,7 @@
+<?php
+    include 'init.php';
+	protect_page();
+?>
 <section>
 	<h2>Characters.</h2>
 
@@ -29,7 +33,7 @@
 	<h3>Imperial Intelligence Commander Jared Macintyre. (DS9 Garak)</h3>
 
 	<p>
-	Former Republic Navy Intelligence. Protégé of Admiral Yularen. Intelligence agent aboard Challenger, meant to provide Intelligence rapports to the Commodore and conduct intelligence briefings. Former field agent. Uses his own skills to foil every power grab made by ISB agent. Has secret agents of his own aboard every ship in the battle group and know the identity of almost every secret ISB agent.
+	Former Republic Navy Intelligence. ProtÃ©gÃ© of Admiral Yularen. Intelligence agent aboard Challenger, meant to provide Intelligence rapports to the Commodore and conduct intelligence briefings. Former field agent. Uses his own skills to foil every power grab made by ISB agent. Has secret agents of his own aboard every ship in the battle group and know the identity of almost every secret ISB agent.
 	</p>
 	<h3>Admiral Wullf Yularen, Head of Outer Rim Operations.</h3>
 

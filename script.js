@@ -67,39 +67,3 @@ function ccButton()
 			{
 				$( ".style" ).toggle(600)
 			}
-function changeColor(x)
-			{
-				art=document.getElementsByTagName("article");
-				sec=document.getElementsByTagName("section");
-				hr=document.getElementsByTagName("hr");
-				navA=document.getElementsByClassName("navA");
-				link=document.getElementsByClassName("link");
-
-				console.log(navA);
-				console.log(x);
-
-				for(var i = 0; i < navA.length; i++)
-				{
-					console.log(i);
-
-					navA[i].style.color = x.style.color;
-					navA[i].style.borderColor = x.style.borderColor;
-				}
-				for(var i = 0; i < hr.length; i++)
-				{
-					hr[i].style.color = x.style.color;
-					hr[i].style.borderColor = x.style.borderColor;
-					hr[i].style.backgroundColor = x.style.color;
-				}
-				for(var i = 0; i < link.length; i++)
-				{
-					link[i].style.color = x.style.color;
-				}
-				art[0].style.color = x.style.color;
-				art[0].style.borderColor = x.style.borderColor;
-				art[0].style.backgroundColor = x.style.backgroundColor;
-
-				sec[0].style.color = x.style.color;
-				sec[0].style.borderColor = x.style.borderColor;
-				sec[0].style.backgroundColor = x.style.backgroundColor;
-			}

@@ -4,8 +4,14 @@
 		<meta charset="UTF-8">
 		<title>The Dark Times</title>
 		<link rel="shortcut icon" href="pictures/ship.ico" type="image/x-icon">
-		<link rel="stylesheet" title="Orginal" href="stylesheet.css">
-
+		<script>
+			var StyleFile = "stylesheet";
+				if(document.cookie.charAt(6) != "2" && document.cookie.charAt(6) != "3" && document.cookie.charAt(6) != "4")
+					StyleFile += ".css";
+				else
+					StyleFile += document.cookie.charAt(6) + ".css";
+					document.writeln('<link rel="stylesheet" type="text/css" href="' + StyleFile + '">');
+		</script>
 	</head>
 	<body>
 

@@ -7,8 +7,8 @@ body{
 	min-width:700px;
 	margin-right:auto;
     	margin-left:auto;
-	background-color:gold;
-	border-color:gold;
+	background-color:red;
+	border-color:red;
 	color:black;
 	height:2em;
 }
@@ -35,8 +35,9 @@ article{
     	margin-left:auto;
     	margin-top:0%;
 	min-height:770px;
-    	color:#ffd700;
+    	color:red;
 }
+
 @font-face
 {
 font-family:Starjedi;
@@ -78,7 +79,7 @@ li{
 	margin-top:10px;
 }
 .navA{
-	color:#ffd700;
+	color:red;
 	background-color:rgba(0,0,0,0.0);
 	text-align:center;
 	display:block;
@@ -86,12 +87,12 @@ li{
 	margin:5%;
 	
 	border-style:solid;
-	border-color:#ffd700;
+	border-color:red;
 }
 .navA:hover,.navA:active{
 	color:#000;
-	background-color:#ffd700;
-	border-color:#ffd700;
+	background-color:red;
+	border-color:red;
 }
 .button{
 	cursor: pointer;
@@ -104,8 +105,8 @@ li{
 }
 .button:hover,.button:active{
 	color:#000;
-	background-color:#ffd700;
-	border-color:#ffd700;
+	background-color:red;
+	border-color:red;
 }
 .chHide{
 	display:none;
@@ -176,7 +177,7 @@ li{
 	background-color:gold;
 }
 section{
-	background-color:rgba(255,255,255,0.2);
+	background-color:rgba(000,000,000,0.6);
 	border:none;
 	
 	float:left;
@@ -187,9 +188,9 @@ section{
 }
 hr{
 	border-style:solid;
-	color:#ffd700;
-	background-color:#ffd700;
-	border-color:#ffd700;
+	color:red;
+	background-color:red;
+	border-color:red;
 }
 #secNav{
 	background-color:rgba(0,0,0,0.0);
@@ -243,7 +244,7 @@ address{
 	float:left;
 }
 .link{
-	color:gold;
+	color:red;
 }
 .link:hover, .link:active{
 	text-decoration:underline;

@@ -6,24 +6,22 @@
 		<link rel="shortcut icon" href="pictures/ship.ico" type="image/x-icon">
 		<script>
 			var StyleFile = "stylesheet";
-			if(document.cookie.charAt(6) == ";" || document.cookie.charAt(6) == "S")
+			if(document.cookie.charAt(6) != "2" && document.cookie.charAt(6) != "3" && document.cookie.charAt(6) != "4")
 				StyleFile += ".css";
 			else
 				StyleFile += document.cookie.charAt(6) + ".css";
 			document.writeln('<link rel="stylesheet" type="text/css" href="' + StyleFile + '">');
 		</script>
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="script.js"></script>
 		<script src="easter.js"></script>
 	</head>
 	<body>
 		<nav id="logg">
-			<ul class="floatL">
-				<li><a href="register.php">Reg</a></li>
-			</ul>
-			<ul class="floatR">
-				<li><a href="LogIn2.php">Logg in</a></li>
-				<li><a href="loggout.php">Logg ut</a></li>
+			<ul>
+				<li><a href="register.php">Register</a></li>
+				<li><a href="LogIn2.php">Log in</a></li>
+				<li><a href="loggout.php">Log out</a></li>
 			</ul>
 		</nav>
 		<article>
@@ -69,11 +67,13 @@
 
 								case 1: include "credits.html";
 									break;
-								case 2: include "extras/characters.html";
+								case 2: include "extras/characters.php";
 									break;
-								case 3: include "extras/ins_challenger.html";
+								case 3: include "extras/ins_challenger.php";
 									break;
 								case 4: include "extras/acclamator3.php";
+									break;
+								case 5: include "protect.php";
 									break;
 								default: include "frontPage.html";
 							endswitch;
@@ -122,7 +122,7 @@
 				</nav>
 				<footer>
 					<address>
-					Made by:
+					Made by: Gr16 HIOA Autumn 2013
 					</address>
 					<div class="floatR">
 						<a class="link" href="index.php?appendix=1">Credits</a>
