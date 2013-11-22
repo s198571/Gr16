@@ -24,12 +24,12 @@
 
 				<?php
 					include 'init.php';
-					if(logged_in() === FALSE){
+					if(logged_in2() === FALSE){
 						echo '<li><a href="LogIn2.php">Log in</a></li>';
 					}
 					else{
 						echo '<li><a href="loggout.php">Log out</a></li>';
-						echo '<li> Welcome! </li>';
+						echo '<li style="font-size:1.2em;"> Welcome '+ $_SESSION['id'] +'! </li>';
 					}
 				?>
 			</ul>
