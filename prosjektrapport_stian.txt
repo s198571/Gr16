@@ -1,0 +1,23 @@
+Inlogging/ protect pages/ gjestebok:
+
+Vi ville lage en innloggings funskjon. Denne funskjonen skulle gjøre at spesielt interesserte skulle kunne chatte sammen og kommentere/skrive i gjestebok. i tillegg skal brukeren få tilgang på eksklusiv innhold. Eksklusivt innhold kan utvides etter behov. For å ha en slik innloggingsfunskjon trengte vi en database. Her skal brukerens informasjon lagres. Databasen skal også brukes til gjesteboken. Grunnen til disse funksjonene var at vi ville holde siden fri for spam og at vi kan utestenge brukere vi mener ikke oppfører seg.
+
+Ting gikk ikke helt som det skulle. vi valgte derfor å droppe gjestebok funksjonen. Vi fikk til både innlogging og protect pages. 
+
+
+
+Refleksjonsnotat:
+
+Jeg (Stian Eidet) med hjelp fra (Hallbjørn) har hatt ansvaret for innloggings funksjon. Det meste har gått greit underveis, selvom jeg kom litt tregt i gang. Php delen inkludert databasen skulle være ferdig i løpet av de første ukene. Dette skjedde ikke fordi jeg hadde mye å gjøre utenom skolen. Når jeg først kom i gang gikk det relativt greit. Jeg har ikke jobbet alt for mye med databaser så det ble mye research.
+
+Selve arbeidet gikk fint, men tok lang tid. Det gikk fremover hele tiden, men det gikk ikke så fort som jeg ville. Planen var å implementere en innloggingsfunskjon som gjorde at folk som var over middels interessert kunne lage en bruker. Denne brukeren skulle få tilgang til materielle som bare andre medlemmer kunne se. i tillegg skulle medlemmene kunne chatte sammen og skrive i gjesteboken. 
+
+Jeg skjønte fort at en chatte funksjon var det ikke tid til. Jeg hadde aldri laget noe slikt tidligere. Som sagt gikk selve innloggingsfunskjonen greit, men tok mye lengere enn forventet. Selve databasen ble satt opp tidlig. veldig flaks at dette ble gjort tidlig. For når koden var ferdig skulle alt testet og Under denne testingen sluttet skolens database å fungere. Dette var litt krise  fordi nå ble nesten hele innloggingsfunskjonen ubrukelig. Den er avhengi av databasen for å fungere.  Databasen var omsider oppe å gikk. innlogging er fikset og fungerer, men møtte noe problemer med registrering. Etter en del fiksing av buggs fungerer registreringen. Etter mye tweaking fungere omsider alt som det skulle. 
+
+
+
+
+
+
+
+
