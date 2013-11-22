@@ -20,8 +20,18 @@
 		<nav id="logg">
 			<ul>
 				<li><a href="register.php">Register</a></li>
-				<li><a href="LogIn2.php">Log in</a></li>
-				<li><a href="loggout.php">Log out</a></li>
+
+
+				<?php
+					include 'init.php';
+					if(logged_in() === FALSE){
+						echo '<li><a href="LogIn2.php">Log in</a></li>';
+					}
+					else{
+						echo '<li><a href="loggout.php">Log out</a></li>';
+						echo '<li> Welcome! </li>';
+					}
+				?>
 			</ul>
 		</nav>
 		<article>
