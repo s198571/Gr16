@@ -3,10 +3,12 @@ function register_user($register_data){
     array_walk($register_data, 'array_sanitize');
     $register_data['password'] = md5($register_data['password']);
     
-    $fields = '`' . implode('`,` ', array_keys($register_data)) . '`';
+    $fields = '`' . implode('`,`', array_keys($register_data)) . '`';
     $data = '\'' . implode('\',\'', $register_data) .'\'';
     
-    mysql_query("INSERT_INTO`brukere`($fields) VALUES ($data)");
+    echo $fields;
+    
+    mysql_query("INSERT INTO 'brukere'($fields) VALUES ($data)");
 }
 
 function logged_in(){
@@ -25,7 +27,7 @@ function email_exists($email){
 
 function user_id_from_username($username){
     $username = sanitize($username);
-    return mysql_result(mysql_query("SELECT `id` FROM `brukere` WHERE `username` ='$username'"), 0, 'id');
+    return mysql_result(mysql_query("SELECT `id` FROM `brukere` WHERE `brukere` ='$username'"), 0, 'id');
 }
 
 function login($username, $password){
