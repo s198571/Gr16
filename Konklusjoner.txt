@@ -1,0 +1,7 @@
+Konklusjoner, resultatbehandling
+Kommentar/Chat funksjon:
+Tidligere i prosjektet snakket vi om å legge til en kommentar/chat funksjon på siden, men det tok lengre tid enn vi hadde planlagt å sette opp PHP for websiden og legge inn navigasjons funksjonene. Etter en stund så bestemte vi at kommentar/chat funksjonen ville ta for lang tid til å lære og implementere og ville nok resultert i en halvferdig stykke javaScript som ville ikke fungert ordentlig, men er kanskje noe vi kan implementere på et senere tidspunkt.
+
+Generell resultatoversikt:
+Vi har klart mesteparten av de målene vi satte ut med dette prosjektet. Vi bygget opp over 150 individuelle HTML sider med tekst. Vi har fått til et enkelt måte for brukere å lese og navigere rundt historien. Vi har fått til et innloggingsfunksjon som gir aksess til ekstra materiale, og kanskje ved et senere tidspunkt vi kan implementere kommentar/chat funksjonen.
+På grunn av andre oppgaver og jobb utenfor skolen så måtte vi jobbe langt utenfor den tiden vi hadde satt av for å fullføre prosjektet og skrive opp dokumentasjonen, men vi fikk til slutt fiksa opp den siste delen og fikk et produkt som fungerte. Siden vi ikke hadde mye forkunnskaper så viste vi ikke hvor lenge det kunne ta eller hvor vanskelig det kom til å bli. 
