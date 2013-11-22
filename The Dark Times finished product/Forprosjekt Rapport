@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="fpstyle.css" >
+
+<title>Forprosjekt Rapport</title>
+
+</head>
+<body>
+
+<header>
+	<h1>Forprosjekt Rapport</h1>
+</header>
+
+	<h2>The Dark Times Fanfiction webside</h2>
+	<p>
+	Formålet med denne websiden er for å publisere historien til forfatteren Thomas Newman.<bl>
+	Folk vil kunne bli medlem i siden og så kommentere på historien. Dette vil væer en side for
+	<bl>konstruktiv kritikk. Man skal også, hvis vi får tid, gi muligheten for medlemmer å kunne<bl>
+	publisere deres historier. Generelle regler for publisering kommer senere.
+	</p>
+
+
+<section>
+	<h2>Use Case</h2>
+	<ul>
+		<li>Kunne lese historier</li>
+		<li>Bli medlem ved å legge til sin E-mail</li>
+		<li>Medlems innlogging</li>
+		<li>Glemt passord</li>
+		<li>Medlemmer kan kommentere</li>
+		<li>Søke felt</li>
+		<li>Link til Google-translate</li>
+		<li>Kunne forandre skrift og bakgrunns farge etter smak.</li>
+	</ul>
+
+	<h2>Webside skisser</h2>
+		<img width="750" height="350" alt="skisse av index.php siden" src="websideskisse.png">
+
+
+	<h2>Arbeidsfordeling</h2>
+		<p>Thomas Newman: Dokumantasjon, prosjektleder</p>
+		<p>Hallbjørn Storruste: JavaScript</p>
+		<p>Adrian Westlund: HTML og CSS</p>
+		<p>Stian Eidet: </p>
+		<p>Denne arbeids fordeling er ikke endelig.</p>
+
+	<h2>Teknologier</h2>
+		<ul>
+			<li>php: For å lage en enkelt side som vi kan legge undersider til.</li>
+			<li>HTML: For å lage undersidene.</li>
+			<li>CSS: Kontrollere utseende</li>
+			<li>JavaScript: For å lage søksfunksjoner</li>
+			<li>JQuery: Forenklede Javascript metoder</li>
+			<li>Google-translate: </li>
+		</ul>
+
+
+	<h2>Milepæl Plan</h2>
+		<ul>
+			<li>1. uke: Forprosjekt Rapport, 30.10.2013</li>
+			<li>2. uke: Sette opp php, html og css rammeverk, 07.11.2013</li>
+			<li>3. uke: Programmere websidens funksjoner, 14.11.2013</li>
+			<li>4. uke: Bli ferdig med å legge til kapitler og codex info, 21.11.2013</li>
+			<li>5. uke: Dokumentasjon, 24.11.2013</li>
+		</ul>
+
+	<h2>Arbeidsmetode</h2>
+		<p>Sitter og jobber tett sammen. Har ikke fordelt arbaidsoppgavene ordentlig på grunn av bortfall.</p>
+		<p>Vi vil bruke Work Breakdown Structure til å fordele arbeidet.</p>
+
+	<h2></h2>
+
+
+</section>
+
+
+
+<footer>
+	<p>Dette er en "Work-in-progress" så forandringer kan forventes.</p>
+</footer>
+
+
+
+</body>
+
+</html>

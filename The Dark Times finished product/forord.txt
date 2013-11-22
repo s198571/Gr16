@@ -1,0 +1,3 @@
+Forord
+Prosjektet startet med en ide Thomas Newman hadde om å lage en webside om et av historiene han hadde laget. Han ønsket at flere skulle kunne lese den og den skulle være fritt for alle å lese. Den skulle også gi muligheten for lesere å skrive kommentarer, men som en liten sikkerhet så skulle bare de som hadde blitt medlemmer av siden kunne kommentere og få tilgang til ekstra materiale som Thomas hadde laget for egen skyld. 
+Den skulle også ha mulighet for en search funksjon for å lette etter en spesifikk ord eller setning og en oversettelses funksjon siden historien og ekstra innholdet var skrevet på engelsk. Alle skulle ha muligheten til å kunne forandre fargene for både skrift og bakgrunn for å forbedre lese opplevelsen sin.

@@ -1,0 +1,5 @@
+Easter egg!
+
+Skriv: s,t,a,r,<space>,w,a,r,s
+
+Se hva som skjer!
