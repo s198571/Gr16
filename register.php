@@ -64,8 +64,8 @@ if (empty($_POST) === FALSE){
 
 if (isset($_GET['success']) && empty($_GET['success'])) {
     echo'You\`ve been registered!';
-    //sleep(5);
-    //header('location: index.php');
+    sleep(2);
+    header('location: index.php');
 }else{
 
 if(empty($_POST) === FALSE && empty($errors) === TRUE) {
