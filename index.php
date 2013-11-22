@@ -29,7 +29,7 @@
 					}
 					else{
 						echo '<li><a href="loggout.php">Log out</a></li>';
-						echo '<li style="font-size:1.2em;"> Welcome '+ $_SESSION['id'] +'! </li>';
+						echo '<li style="font-size:1.2em;"> Welcome '.$_SESSION['id'].'! </li>';
 					}
 				?>
 			</ul>

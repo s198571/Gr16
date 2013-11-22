@@ -1,5 +1,9 @@
 <?php
-session_start();
+
+if(!isset($_SESSION))
+{
+	session_start();
+}
 //error_reporting(0);
 
 require 'connect.php';
