@@ -1,0 +1,13 @@
+Innledning
+Faglig bakgrunn
+Dette prosjektet skulle bygges på det vi hadde lært til nå, med spesiell fokus på HTML5, CSS, php og JavaScript. Den skulle også strekke både vår fantasi og tekniske kunskaper til å lage denne websiden. Formålet med prosjektet var å lage en webside som forbedret lese-erfaringen av Thomas Newmans sin science fiction historie. Den skulle være lett å lese for alle, inkludert de med svak syn og de blinde, i andre ord universalt utformet. 
+
+
+
+Rollen min 
+Når mesteparten av gruppa kom sammen å hadde vi en raskt brainstorming runde og satte opp en rask forprosjekt rapport, skrevet av meg med input fra de andre.
+Mesteparten av 'faktainnsamlingen' for historien hadde jeg gjort i det siste to-tre årene som jeg har skrevet på denne historien. Mesteparten var info fra fan wiki-siden wookiepedia og lite grann inspirasjon fra den virkelige verden.
+Når vi begynte dette prosjektet var historien på 11 kapitler og 75,411 ord i word dokumenter. I starten så lette jeg etter måter å raskt konvertere .docx filer til html format, men etter å ha lest litt nærmere på prosjekt oppgave kravene så bestemte vi å formatere hele historien selv, som ble min oppgave til slutt, i tillegg til å være prosjekt leder. I alt så var det 150 sider å formatere til html som er en tidskrevende prosess. Etter en stund så ble det mer automatisk for meg, men fortsatt tok tid. Etter det så hadde vi også tre sider med ekstra materiale som jeg ønska å legge til, som en liten ekstra materiell på en DVD.
+Jeg skrev forordet for både historien og prosjekt rapporten, og satte opp "skjellettet" for html filene for både forprosjekt rapporten og prosjekt rapporten, pluss en CSS stylesheet for en utskrifts vennlig versjon for forprosjekt rapporten.
+Som prosjektleder så var jeg en mer stille leder og hørte på alle sammen sine innspill og stolte på de som hadde oppgavene til å gjøre dem, og oppfulgte så mye som mulig på gruppens fremgang, og siden mesteparten av gruppa var i samme rom så kunne vi bruke en demokratisk prosess med meg som hadde siste ordet på avgjørelser på hvordan siden skulle se ut. For å fullføre nettsiden når det gjaldt koding og struktur så løste vi problemene som en gruppe. På den måten så kunne vi raskt respondere på bugs som dukka opp.
+
